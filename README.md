@@ -1,3 +1,11 @@
+npx create-next-app@latest aldeano-new --typescript
+√ Which linter would you like to use? » ESLint
+√ Would you like to use React Compiler? ... No / Yes
+√ Would you like to use Tailwind CSS? ... No / Yes
+√ Would you like your code inside a `src/` directory? ... No / Yes
+√ Would you like to use App Router? (recommended) ... No / Yes
+√ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
@@ -38,3 +46,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+
+src/pages/contact.tsx
+✅ Características de esta implementación
+
+Layout reutilizable: Header + Footer en todas las páginas.
+Bootstrap completo: grid, form-control, btn, etc.
+Envía los datos a /api/contact (archivo contact.ts) de manera stateless.
+Maneja loading y muestra alertas al usuario sobre éxito o error.
