@@ -6,7 +6,7 @@ export default function Home() {
       <div className="container py-5">
         <h1 className="mb-4">Aldeano Global</h1>
         <p className="lead">
-          Este es el sitio renovado, limpio, responsivo y listo para desplegar en Vercel.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima eaque dolore ipsam aspernatur eligendi, vitae quia hic sint sequi dignissimos ut tenetur saepe sapiente dolor facere dicta blanditiis rem soluta.
         </p>
 
         <div className="row mt-5">
