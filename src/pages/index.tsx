@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="container py-5">
-        <h1 className="mb-4">Bienvenido a Aldeano Global</h1>
+        <h1 className="mb-4">Aldeano Global</h1>
         <p className="lead">
           Este es el sitio renovado, limpio, responsivo y listo para desplegar en Vercel.
         </p>
