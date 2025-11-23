@@ -1,13 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div className="container">
-          <Link href="/" className="navbar-brand">
-            Aldeano Global
-          </Link>
+          <Link href="/" className="navbar-brand d-flex align-items-center">
+  <img 
+  src="/img/logo.png" 
+  alt="Aldeano Global Logo" 
+  className="header-logo"
+/>
+
+</Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -19,6 +26,7 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
@@ -38,16 +46,17 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <Link href="/cultura" className="nav-link">
-                Cultura
+                  Cultura
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/contact" className="nav-link">
-                Contacto
+                  Contacto
                 </Link>
               </li>
             </ul>
           </div>
+
         </div>
       </nav>
     </header>

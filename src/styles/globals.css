@@ -27,33 +27,69 @@ a {
 }
 
 /* Cards y footer */
+.card1, .card2, .card3 {
+  width: 375px;
+  height: 130px;
+  padding: 200px;
+}
+
 .card1 {
   border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #ffae009f;
+  box-shadow: 3 2px 6px rgba(0,0,0,0.1);
+  background: linear-gradient(rgba(231, 199, 17, 0.514), orange); 
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
   padding: 2.1rem;
+  cursor: pointer;
 }
+.card1-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card1-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 .card2 {
   border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #ff33009f;
+  box-shadow: 3 2px 6px rgba(0,0,0,0.1);
+  background: linear-gradient(rgba(231, 60, 17, 0.514), rgb(255, 60, 0)); 
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
   padding: 2.1rem;
+  cursor: pointer;
 }
+.card2-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card2-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 .card3 {
   border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #00a1169f;
+  box-shadow: 3 2px 6px rgba(0,0,0,0.1);
+  background: linear-gradient(rgba(97, 240, 1, 0.514), rgba(54, 148, 0, 0.774));
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
   padding: 2.1rem;
-}  
+  cursor: pointer;
+}
+.card3-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card3-text {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
 
 footer {
   background-color: #858585;
@@ -85,6 +121,22 @@ body {
   text-shadow: 0 2px 4px #00000070;
   font-size: 4rem;
 }
+.lead {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 600px;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  text-shadow: 0 1px 3px #00000050;
+  background-color: #999999a0;
+  padding: 4px;
+  box-shadow: 0 4px 6px #00000020;
+  border-radius: 10px;
+}
+
+.text {
+  text-shadow: 3 2px 6px #00000020;
+  font-size: 18px;
+}
 /* Header - tamaño de fuentes */
 .navbar-brand {
   font-size: 2.5rem !important;
@@ -105,3 +157,34 @@ body {
   color: #ffffff !important; /* Texto blanco */
   text-shadow: 1px 1px 4px #00000070; /* Sombra suave */
 }
+.container { /* Cuerpo entero */
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-top: 40px;
+}
+.navbar {
+  height: 80px;            /* altura fija del header */
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+}
+
+.navbar-brand img {
+  max-height: 200px;         /* tamaño de la imagen */
+  width: auto;
+  margin-top: 95px;
+}
+
+.nav-link  {  /* separar palabras, están todas en un solo .nav-link */
+  font-size: 20px;        /* tamaño de los ítems del menú */
+}
+
+/* Gradiente para el HEADER */
+.navbar {
+  background: linear-gradient(90deg, #1e1e1e, #5c5c5c);
+  height: 80px;                 /* mantiene tamaño fijo */
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
