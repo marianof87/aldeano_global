@@ -27,15 +27,33 @@ a {
 }
 
 /* Cards y footer */
-.card {
+.card1 {
   border-radius: 0.5rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #7c7c7c;
+  background-color: #ffae009f;
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 2.1rem;
 }
+.card2 {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #ff33009f;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #363636;
+  margin-bottom: 1.5rem;
+  padding: 2.1rem;
+}
+.card3 {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #00a1169f;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #363636;
+  margin-bottom: 1.5rem;
+  padding: 2.1rem;
+}  
 
 footer {
   background-color: #858585;
@@ -52,7 +70,7 @@ main {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  body {
+body {
     background-color: var(--background);
     color: var(--foreground);
   }
@@ -60,4 +78,30 @@ main {
   .card {
     box-shadow: 0 2px 6px rgba(202, 202, 202, 0.05);
   }
+}
+
+.mb-4 {
+  font-family: Impact, Charcoal, sans-serif;
+  text-shadow: 0 2px 4px #00000070;
+  font-size: 4rem;
+}
+/* Header - tamaño de fuentes */
+.navbar-brand {
+  font-size: 2.5rem !important;
+  margin-top: -5; /* Título "Aldeano Global" */
+}
+
+.nav-link {
+  font-size: 1.15rem !important; /* Ítems del menú */
+}
+/* Header - colores y tipografía */
+.navbar {
+  background-color: #2373a896 !important; /* Fondo del header */
+  border-bottom: 2px solid #2c2c2c;     /* Línea inferior opcional */
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important; /* Texto blanco */
+  text-shadow: 1px 1px 4px #00000070; /* Sombra suave */
 }
