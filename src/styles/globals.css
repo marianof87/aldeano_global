@@ -46,10 +46,12 @@ a {
 .card1-title {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center
 }
 .card1-text {
   font-size: 1.1rem;
   line-height: 1.4;
+  text-align: center
 }
 
 .card2 {
@@ -65,10 +67,12 @@ a {
 .card2-title {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 .card2-text {
   font-size: 1.1rem;
   line-height: 1.4;
+  text-align: center
 }
 
 .card3 {
@@ -84,23 +88,25 @@ a {
 .card3-title {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .card3-text {
   font-size: 1.1rem;
   line-height: 1.4;
+  text-align: center;
 }
 
 footer {
   background-color: #858585;
   color: #6c757d;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 /* Main Layout */
 main {
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
 }
 
@@ -137,54 +143,50 @@ body {
   text-shadow: 3 2px 6px #00000020;
   font-size: 18px;
 }
-/* Header - tamaño de fuentes */
-.navbar-brand {
-  font-size: 2.5rem !important;
-  margin-top: -5; /* Título "Aldeano Global" */
+
+/*========== HEADER LIMPIO ==========*/
+
+/* Tamaño y fuente del menú */
+.navbar-nav .nav-link {
+  font-size: 1.15rem !important;
+  padding: 0.5rem 1rem;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 4px #00000070;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.nav-link {
-  font-size: 1.15rem !important; /* Ítems del menú */
-}
-/* Header - colores y tipografía */
-.navbar {
-  background-color: #2373a896 !important; /* Fondo del header */
-  border-bottom: 2px solid #2c2c2c;     /* Línea inferior opcional */
+/* Hover INDIVIDUAL */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
 }
 
-.navbar-brand,
-.nav-link {
-  color: #ffffff !important; /* Texto blanco */
-  text-shadow: 1px 1px 4px #00000070; /* Sombra suave */
-}
-.container { /* Cuerpo entero */
-  max-width: 1450px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  margin-top: 40px;
-}
-.navbar {
-  height: 80px;            /* altura fija del header */
+/* Cada item independiente */
+.navbar-nav {
   display: flex;
-  align-items: center;      /* centra verticalmente */
+  align-items: center;
+  gap: 10px;
 }
 
-.navbar-brand img {
-  max-height: 200px;         /* tamaño de la imagen */
-  width: auto;
-  margin-top: 95px;
+.navbar-nav .nav-item {
+  display: inline-block;
 }
 
-.nav-link  {  /* separar palabras, están todas en un solo .nav-link */
-  font-size: 20px;        /* tamaño de los ítems del menú */
-}
-
-/* Gradiente para el HEADER */
+/* Header — gradiente gris */
 .navbar {
-  background: linear-gradient(90deg, #1e1e1e, #5c5c5c);
-  height: 80px;                 /* mantiene tamaño fijo */
+  background: linear-gradient(90deg, #1e1e1e, #5c5c5c) !important;
+  height: 80px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  border-bottom: 2px solid #2c2c2c;
 }
+
+/* Logo — se respeta EXACTAMENTE tu diseño */
+.navbar-brand img {
+  max-height: 200px;
+  width: auto;
+  margin-top: 130px;  /* pedido explícito */
+}
+
 
