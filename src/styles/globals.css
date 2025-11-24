@@ -11,15 +11,15 @@
   }
 }
 .part1 {
-  margin-top: 100px;
-  background-color: #afafafec;
+  margin-top: 50px;
+  background-color: #afafafc5;
   padding: 10px;
 }
-.part2 {
-  margin-top: 20px;
-  margin-bottom: 100px;
-  background-color: #afafaf5b;
-  padding: 12px;
+
+.txt {
+  text-align: center;
+  text-shadow: #363636 0px 0.5px 1px;
+  font-size: 1.3rem;
 }
 
 body {
@@ -36,77 +36,113 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.group {
+  margin-top: 200px;
+  background-color: #72787e86;
+  background-size: over;
+}
 
 /* Cards y footer */
 .card1, .card2, .card3 {
+  margin-left: 540px;
   width: 375px;
   height: 130px;
-  padding: 200px;
+  padding: 20px;
+  border-radius: 0.9rem;
+}
+.card1-title, .card2-title, .card3-title {
+  font-size: 1.7rem;     
+  font-weight: bold;
+  text-align: center;
+}
+.card1-text, .card2-text, .card3-text {
+  font-size: 1.35rem;    
+  line-height: 1.5;
+  text-align: center;
 }
 
+/* =======================
+   CARD 1
+======================= */
 .card1 {
-  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-left: 540px;
+  width: 375px;
+  height: 130px;
+  padding: 20px;
+  border-radius: 0.9rem;
+
   box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgb(231, 199, 17), orange); 
+  background: linear-gradient(rgba(247, 202, 54, 0.863), rgba(231, 108, 77, 0.925));
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
-  padding: 2.1rem;
+  margin-top: 1.5rem;
   cursor: pointer;
 }
-.card1-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center
-}
-.card1-text {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  text-align: center
+
+.card1:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.20);
 }
 
+/* =======================
+   CARD 2
+======================= */
 .card2 {
-  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-left: 540px;
+  width: 375px;
+  height: 130px;
+  padding: 20px;
+  border-radius: 0.9rem;
+
   box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(245, 82, 41, 0.753), rgba(170, 40, 1, 0.897)); 
+  background: linear-gradient(rgba(243, 109, 76, 0.925), rgba(32, 101, 141, 0.911));
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
-  padding: 2.1rem;
   cursor: pointer;
 }
-.card2-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-.card2-text {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  text-align: center
+
+.card2:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.20);
 }
 
+/* =======================
+   CARD 3
+======================= */
 .card3 {
-  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-left: 540px;
+  width: 375px;
+  height: 130px;
+  padding: 20px;
+  border-radius: 0.9rem;
+
   box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(86, 212, 1, 0.918), rgba(50, 136, 0, 0.959));
+  background: linear-gradient(rgba(48, 111, 148, 0.911), rgba(35, 129, 117, 0.877));
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
-  padding: 2.1rem;
   cursor: pointer;
 }
-.card3-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
+
+.card3:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.20);
 }
 
-.card3-text {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  text-align: center;
-}
 
 h5 {
   margin-bottom: 1rem;
@@ -114,10 +150,10 @@ h5 {
   font-family: Arial, Helvetica, sans-serif;
 }
 .card4 {
-  margin-top: 100px;
-  background-color: #afafafec;
+  margin-top: 290px;
+  background-color: #afafafc5;
   padding: 20px;
-  border-radius: 0.5rem;
+  text-align: center;
   font-size: 1.1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: 2px 2px 4px #00000020;
@@ -126,7 +162,7 @@ h5 {
 }
 
 footer {
-  background-color: #858585;
+  background-color: #747272;
   color: #6c757d;
   text-align: center;
   padding: 1.5rem;
@@ -136,6 +172,7 @@ footer {
 main {
   padding-top: 7rem;
   padding-bottom: 2rem;
+  max-width: 1483px;
 }
 
 /* Dark mode */
@@ -151,16 +188,17 @@ body {
 }
 
 .mb-4 {
-  border-radius: 0.5rem;
+  text-align: center;
   font-family: Impact, Charcoal, sans-serif;
   text-shadow: 2px 5px 8px #00000070;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .lead {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-right: 600px;
+  margin: center;
   font-size: 1.5rem;
   color: #2c2c2c;
+  text-align: center;
   text-shadow: 0 1px 3px #00000050;
   background-color: #999999a0;
   padding: 4px;
@@ -214,9 +252,18 @@ body {
 
 /* Logo — se respeta EXACTAMENTE tu diseño */
 .navbar-brand img {
-  max-height: 200px;
+  max-height: 150px;
   width: auto;
-  margin-top: 130px;  /* pedido explícito */
+  margin-top: 80px;  /* pedido explícito */
+}
+.body-logo {
+  max-width: 340px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 195px;
+  margin-bottom: -230px;
 }
 
 
