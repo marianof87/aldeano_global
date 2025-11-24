@@ -10,12 +10,23 @@
     --foreground: #353535;
   }
 }
+.part1 {
+  margin-top: 100px;
+  background-color: #afafafec;
+  padding: 10px;
+}
+.part2 {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background-color: #afafaf5b;
+  padding: 12px;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(184, 184, 184);
-  color: rgb(32, 32, 32);
+  background-image: url('/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Arial, Helvetica, sans-serif; /* fuente básica */
@@ -36,7 +47,7 @@ a {
 .card1 {
   border-radius: 0.5rem;
   box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(231, 199, 17, 0.514), orange); 
+  background: linear-gradient(rgb(231, 199, 17), orange); 
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
@@ -57,7 +68,7 @@ a {
 .card2 {
   border-radius: 0.5rem;
   box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(231, 60, 17, 0.514), rgb(255, 60, 0)); 
+  background: linear-gradient(rgba(245, 82, 41, 0.753), rgba(170, 40, 1, 0.897)); 
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
@@ -78,7 +89,7 @@ a {
 .card3 {
   border-radius: 0.5rem;
   box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(97, 240, 1, 0.514), rgba(54, 148, 0, 0.774));
+  background: linear-gradient(rgba(86, 212, 1, 0.918), rgba(50, 136, 0, 0.959));
   color: #ffffff;
   text-shadow: 1px 1px 10px #363636;
   margin-bottom: 1.5rem;
@@ -97,6 +108,23 @@ a {
   text-align: center;
 }
 
+h5 {
+  margin-bottom: 1rem;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card4 {
+  margin-top: 100px;
+  background-color: #afafafec;
+  padding: 20px;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px #00000020;
+  line-height: 1.6;
+  color: #222222;
+}
+
 footer {
   background-color: #858585;
   color: #6c757d;
@@ -106,7 +134,7 @@ footer {
 
 /* Main Layout */
 main {
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-bottom: 2rem;
 }
 
@@ -123,8 +151,9 @@ body {
 }
 
 .mb-4 {
+  border-radius: 0.5rem;
   font-family: Impact, Charcoal, sans-serif;
-  text-shadow: 0 2px 4px #00000070;
+  text-shadow: 2px 5px 8px #00000070;
   font-size: 4rem;
 }
 .lead {
@@ -138,6 +167,7 @@ body {
   box-shadow: 0 4px 6px #00000020;
   border-radius: 10px;
 }
+
 
 .text {
   text-shadow: 3 2px 6px #00000020;
