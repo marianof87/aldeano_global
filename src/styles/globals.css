@@ -37,111 +37,101 @@ a {
   color: inherit;
 }
 .group {
-  margin-top: 200px;
-  background-color: #72787e86;
-  background-size: over;
+  background: linear-gradient(135deg, #2c2c2ca9 0%, #555555af 100%);
+  padding: 40px 20px;
+  min-height: 350px;          /* asegura altura inicial */
+  overflow: visible !important;  /* permite animación sin romper fondo */
+  position: relative;
+  margin-top: 250px;
+}
+.group .col-md-4 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
 }
 
-/* Cards y footer */
-.card1, .card2, .card3 {
-  margin-left: 540px;
-  width: 375px;
-  height: 130px;
-  padding: 20px;
-  border-radius: 0.9rem;
-}
-.card1-title, .card2-title, .card3-title {
-  font-size: 1.7rem;     
-  font-weight: bold;
+/* === NEW CARD STYLE (card1, card2, card3) === */
+
+.card {
+  width: 290px;
+  height: 120px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+              -15px -15px 30px rgba(60, 60, 60, 0.082);
   text-align: center;
-}
-.card1-text, .card2-text, .card3-text {
-  font-size: 1.35rem;    
-  line-height: 1.5;
-  text-align: center;
-}
-
-/* =======================
-   CARD 1
-======================= */
-.card1 {
-  position: relative;
   overflow: hidden;
-  margin-left: 540px;
-  width: 375px;
-  height: 130px;
-  padding: 20px;
-  border-radius: 0.9rem;
-
-  box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(247, 202, 54, 0.863), rgba(231, 108, 77, 0.925));
-  color: #ffffff;
-  text-shadow: 1px 1px 10px #363636;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
   cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none !important;
 }
 
-.card1:hover::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.20);
+.card:hover {
+  height: 260px;
+  background: linear-gradient(360deg, #edededc5 60%, #616161 20%);
 }
 
-/* =======================
-   CARD 2
-======================= */
-.card2 {
-  position: relative;
-  overflow: hidden;
-  margin-left: 540px;
-  width: 375px;
-  height: 130px;
+/* Header */
+.card .header {
   padding: 20px;
-  border-radius: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+  margin-bottom: 16px;
+  transition: all .5s;
+}
 
-  box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(243, 109, 76, 0.925), rgba(32, 101, 141, 0.911));
-  color: #ffffff;
-  text-shadow: 1px 1px 10px #363636;
-  margin-bottom: 1.5rem;
+.card .header .img-box {
+  width: 50px;
+}
+
+.card .header .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  
+  color: #edededc5;
+  transition: all .5s;
+}
+
+.card:hover .header {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.card:hover .header .title {
+  padding: 0;
+}
+
+/* Content */
+.card .content {
+  display: block;
+  text-align: left;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.card .content p {
+  transition: all .5s;
+  font-size: .8em;
+  margin-bottom: 8px;
+}
+
+.card .content a {
+  color: #1d8122;
   cursor: pointer;
+  transition: all .5s;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.card2:hover::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.20);
+.card .content a:hover {
+  border-bottom: 1px solid #1d8122;
 }
 
-/* =======================
-   CARD 3
-======================= */
-.card3 {
-  position: relative;
-  overflow: hidden;
-  margin-left: 540px;
-  width: 375px;
-  height: 130px;
-  padding: 20px;
-  border-radius: 0.9rem;
 
-  box-shadow: 3 2px 6px rgba(0,0,0,0.1);
-  background: linear-gradient(rgba(48, 111, 148, 0.911), rgba(35, 129, 117, 0.877));
-  color: #ffffff;
-  text-shadow: 1px 1px 10px #363636;
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-}
-
-.card3:hover::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.20);
-}
 
 
 h5 {
@@ -262,7 +252,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 195px;
+  margin-top: 300px;
   margin-bottom: -230px;
 }
 
