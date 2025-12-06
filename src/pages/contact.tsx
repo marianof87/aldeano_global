@@ -56,7 +56,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="name"
-                    className="form-control"
+                    className={`form-control ${styles.input}`}
                     value={form.name}
                     onChange={handleChange}
                     required
@@ -67,7 +67,7 @@ export default function Contact() {
                   <input
                     type="email"
                     name="email"
-                    className="form-control"
+                    className={`form-control ${styles.input}`}
                     value={form.email}
                     onChange={handleChange}
                     required
@@ -77,7 +77,7 @@ export default function Contact() {
                   <label className="form-label">Mensaje</label>
                   <textarea
                     name="message"
-                    className="form-control"
+                    className={`form-control ${styles.input}`}
                     rows={6}
                     value={form.message}
                     onChange={handleChange}
