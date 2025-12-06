@@ -2,65 +2,101 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 import styles from "./columnas.module.css";
 
+// Sample Data Structure
+const categories = [
+  {
+    name: "Arte",
+    items: [
+      {
+        columnist: "Ana Gomez",
+        title: "Miradas Contemporáneas",
+        description: "Análisis de las tendencias artísticas actuales y su impacto en la sociedad.",
+        link: "https://anagomez-arte.blogspot.com"
+      },
+      {
+        columnist: "Carlos Ruiz",
+        title: "Historia del Color",
+        description: "Un recorrido por el uso del color a través de los siglos.",
+        link: "https://carlosruiz-color.blogspot.com"
+      }
+    ]
+  },
+  {
+    name: "Cultura",
+    items: [
+      {
+        columnist: "Lucía Fernández",
+        title: "Voces Urbanas",
+        description: "Crónicas de la vida en la ciudad y sus expresiones culturales.",
+        link: "https://lucia-cultura.blogspot.com"
+      }
+    ]
+  },
+  {
+    name: "Sociedades",
+    items: [
+      {
+        columnist: "Roberto Diaz",
+        title: "Dinámicas Sociales",
+        description: "Reflexiones sobre cómo interactuamos y construimos comunidad.",
+        link: "https://robertodiaz-soc.blogspot.com"
+      }
+    ]
+  },
+  {
+    name: "Ciencia",
+    items: [
+      {
+        columnist: "Elena Martinez",
+        title: "Ciencia para Todos",
+        description: "Divulgación científica accesible y relevante.",
+        link: "https://elena-ciencia.blogspot.com"
+      }
+    ]
+  }
+];
+
 export default function Columnas() {
   return (
     <Layout>
       <div className={styles.hero}>
         <h1 className={styles.title}>Columnas & Redacción</h1>
-        <p className={styles.desc}>Artículos, opinión y análisis de nuestros redactores.</p>
+        <p className={styles.desc}>Nuestra red de columnistas y sus espacios personales.</p>
 
         <div className={styles.text}>
           <h5>
-            En esta sección encontrarás columnas de opinión, análisis cultural y piezas de
-            investigación breve escritas por nuestro equipo y colaboradores. Publicamos
-            reseñas, ensayos cortos, entrevistas y reflexiones alrededor de la cultura,
-            el arte y la sociedad.
+            Explora las distintas categorías y descubre a nuestros colaboradores.
+            Accede directamente a sus blogs para leer sus artículos completos.
           </h5>
         </div>
       </div>
 
       <main className={styles.content}>
-        <section className={styles.list}>
-          {/* Ejemplo de items; reemplazá por contenido real o map sobre datos */}
-          <article className={styles.post}>
-            <h2 className={styles.postTitle}>Columna de ejemplo 1</h2>
-            <p className={styles.postExcerpt}>
-              Extracto breve de la columna. Introducción al tema y gancho para leer más.
-            </p>
-            <p>
-              <Link href="/columnas/columna-ejemplo-1" className={styles.readMore}>
-                Leer la columna →
-              </Link>
-            </p>
-          </article>
-
-          <article className={styles.post}>
-            <h2 className={styles.postTitle}>Columna de ejemplo 2</h2>
-            <p className={styles.postExcerpt}>
-              Otro extracto de ejemplo con un resumen atractivo para los lectores.
-            </p>
-            <p>
-              <Link href="/columnas/columna-ejemplo-2" className={styles.readMore}>
-                Leer la columna →
-              </Link>
-            </p>
-          </article>
-
-          <article className={styles.post}>
-            <h2 className={styles.postTitle}>Columna de ejemplo 3</h2>
-            <p className={styles.postExcerpt}>
-              Resumen corto de la columna número tres. Reemplazá con tu contenido.
-            </p>
-            <p>
-              <Link href="/columnas/columna-ejemplo-3" className={styles.readMore}>
-                Leer la columna →
-              </Link>
-            </p>
-          </article>
-        </section>
+        {categories.map((category) => (
+          <section key={category.name} className={styles.categorySection}>
+            <h2 className={styles.categoryTitle}>{category.name}</h2>
+            <div className={styles.list}>
+              {category.items.map((item, index) => (
+                <article key={index} className={styles.post}>
+                  <h3 className={styles.columnistName}>{item.columnist}</h3>
+                  <h4 className={styles.columnTitle}>{item.title}</h4>
+                  <p className={styles.description}>{item.description}</p>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.link}
+                  >
+                    Ver en Blogspot &rarr;
+                  </a>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))}
       </main>
 
-      <p style={{ textAlign: "center", marginTop: "1.5rem" }}>
+      <p style={{ textAlign: "center", marginTop: "3rem", marginBottom: "3rem" }}>
         <Link href="/" className={styles.backLink}>Volver al inicio</Link>
       </p>
     </Layout>

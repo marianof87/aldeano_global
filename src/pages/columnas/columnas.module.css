@@ -8,7 +8,7 @@
 .title {
   font-size: 2.4rem;
   font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.35);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
   color: #fff;
 }
 
@@ -18,14 +18,14 @@
   margin-top: 0.5rem;
 }
 
-/* Texto introductorio (igual que podcasts) */
+/* Texto introductorio */
 .text {
   margin: 20px auto 0;
   max-width: 900px;
   font-size: 1.05rem;
   line-height: 1.6;
   color: #eee;
-  background: rgba(0,0,0,0.15);
+  background: rgba(0, 0, 0, 0.15);
   padding: 12px;
   border-radius: 8px;
 }
@@ -37,59 +37,83 @@
   padding: 1rem;
 }
 
-/* Lista de posts (columnas) */
+/* Section for each category */
+.categorySection {
+  margin-bottom: 4rem;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for posts in a category */
 .list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* Cada post */
+/* Cada post (Columnista) */
 .post {
-  background: rgba(255,255,255,0.92);
-  padding: 1.15rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
-/* Títulos y extractos */
-.postTitle {
-  margin: 0 0 0.5rem;
-  font-size: 1.25rem;
+.post:hover {
+  transform: translateY(-2px);
+}
+
+.columnistName {
+  font-size: 1.4rem;
+  font-weight: 700;
   color: #222;
+  margin-bottom: 0.5rem;
 }
 
-.postExcerpt {
-  margin: 0;
+.columnTitle {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.description {
   color: #444;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-/* Link de leer más */
-.readMore {
+.link {
   display: inline-block;
-  margin-top: 0.75rem;
-  color: inherit;
-  text-decoration: underline;
+  background-color: #f36d4c;
+  /* Brand orange? */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.link:hover {
+  background-color: #d65a3b;
 }
 
 /* Volver */
 .backLink {
   display: inline-block;
-  margin-top: 0.75rem;
-  color: inherit;
-  text-decoration: underline;
-}
-
-/* Responsive */
-@media (min-width: 768px) {
-  .list {
-    grid-template-columns: 1fr 1fr; /* dos columnas en pantallas medianas */
-  }
-}
-
-@media (min-width: 1200px) {
-  .list {
-    grid-template-columns: 1fr 1fr 1fr; /* tres columnas en anchos grandes si quisieras */
-  }
+  color: #eee;
+  /* Light color for dark background? or dark if outside layout? */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
 }
