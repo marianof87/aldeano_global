@@ -7,13 +7,16 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div className="container">
           <Link href="/" className="navbar-brand d-flex align-items-center">
-  <img 
-  src="/img/logo.png" 
-  alt="Aldeano Global Logo" 
-  className="header-logo"
-/>
+            <Image
+              src="/img/logo.png"
+              alt="Aldeano Global Logo"
+              width={150}
+              height={50}
+              className="header-logo"
+              style={{ width: 'auto', height: 'auto' }} // Preserve aspect ratio
+            />
 
-</Link>
+          </Link>
 
           <button
             className="navbar-toggler"
