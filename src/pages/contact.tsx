@@ -1,5 +1,7 @@
 import Layout from '../components/Layout';
 import { useState } from 'react';
+import Link from 'next/link';
+import styles from '../styles/Contact.module.css';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -37,46 +39,67 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className="container py-5">
-        <h1>Contacto</h1>
-        <form onSubmit={handleSubmit} className="mt-4">
-          <div className="mb-3">
-            <label className="form-label">Nombre</label>
-            <input
-              type="text"
-              name="name"
-              className="form-control"
-              value={form.name}
-              onChange={handleChange}
-              required
-            />
+      <div className={`container py-5 ${styles.container}`}>
+
+        {/* Title with background style */}
+        <div className="text-center">
+          <h1 className={styles.title}>Contacto</h1>
+        </div>
+
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            {/* Form container - Clean white bg, shadow */}
+            <div className="bg-white rounded p-4 p-md-5 shadow-sm">
+              <form onSubmit={handleSubmit}>
+                <div className="mb-4">
+                  <label className="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    name="name"
+                    className="form-control"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="form-label">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    className="form-control"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="form-label">Mensaje</label>
+                  <textarea
+                    name="message"
+                    className="form-control"
+                    rows={6}
+                    value={form.message}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="d-grid gap-2">
+                  <button type="submit" className="btn btn-dark" disabled={loading}>
+                    {loading ? 'Enviando...' : 'Enviar Mensaje'}
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div className="mb-3">
-            <label className="form-label">Email</label>
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              value={form.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-3">
-            <label className="form-label">Mensaje</label>
-            <textarea
-              name="message"
-              className="form-control"
-              rows={4}
-              value={form.message}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn-primary" disabled={loading}>
-            {loading ? 'Enviando...' : 'Enviar'}
-          </button>
-        </form>
+        </div>
+
+        {/* Back button aligned left */}
+        <div className="mt-5">
+          <Link href="/" className={styles.backLink}>
+            Volver al inicio
+          </Link>
+        </div>
       </div>
     </Layout>
   );

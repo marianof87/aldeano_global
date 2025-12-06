@@ -39,7 +39,7 @@
 
 .intro h1 {
   max-width: 320px;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
   line-height: 48px;
   letter-spacing: -2.4px;
@@ -49,14 +49,14 @@
 
 .intro p {
   max-width: 440px;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 32px;
   text-wrap: balance;
   color: var(--text-secondary);
 }
 
 .intro a {
-  font-weight: 500;
+  font-weight: 100;
   color: var(--text-primary);
 }
 
@@ -80,7 +80,7 @@
   transition: 0.2s;
   cursor: pointer;
   width: fit-content;
-  font-weight: 500;
+  font-weight: 100;
 }
 
 a.primary {

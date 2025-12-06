@@ -10,6 +10,7 @@
     --foreground: #353535;
   }
 }
+
 .part1 {
   margin-top: 50px;
   background-color: #afafafc5;
@@ -29,21 +30,26 @@ body {
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Arial, Helvetica, sans-serif; /* fuente básica */
+  font-family: Arial, Helvetica, sans-serif;
+  /* fuente básica */
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .group {
   background: linear-gradient(135deg, #2c2c2ca9 0%, #555555af 100%);
   padding: 40px 20px;
-  min-height: 350px;          /* asegura altura inicial */
-  overflow: visible !important;  /* permite animación sin romper fondo */
+  min-height: 350px;
+  /* asegura altura inicial */
+  overflow: visible !important;
+  /* permite animación sin romper fondo */
   position: relative;
   margin-top: 250px;
 }
+
 .group .col-md-4 {
   padding-left: 5px !important;
   padding-right: 5px !important;
@@ -56,7 +62,7 @@ a {
   height: 120px;
   transition: all .5s;
   box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-              -15px -15px 30px rgba(60, 60, 60, 0.082);
+    -15px -15px 30px rgba(60, 60, 60, 0.082);
   text-align: center;
   overflow: hidden;
   cursor: pointer;
@@ -90,7 +96,7 @@ a {
   letter-spacing: .1em;
   font-weight: 900;
   text-transform: uppercase;
-  
+
   color: #edededc5;
   transition: all .5s;
 }
@@ -139,6 +145,7 @@ h5 {
   margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .card4 {
   margin-top: 290px;
   background-color: #afafafc5;
@@ -167,7 +174,7 @@ main {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-body {
+  body {
     background-color: var(--background);
     color: var(--foreground);
   }
@@ -181,8 +188,9 @@ body {
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
   text-shadow: 2px 5px 8px #00000070;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
 }
+
 .lead {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: center;
@@ -236,7 +244,7 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-bottom: 2px solid #2c2c2c;
 }
 
@@ -244,8 +252,10 @@ body {
 .navbar-brand img {
   max-height: 150px;
   width: auto;
-  margin-top: 80px;  /* pedido explícito */
+  margin-top: 80px;
+  /* pedido explícito */
 }
+
 .body-logo {
   max-width: 340px;
   height: auto;
@@ -255,5 +265,3 @@ body {
   margin-top: 300px;
   margin-bottom: -230px;
 }
-
-

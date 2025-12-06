@@ -1,0 +1,46 @@
+.backLink {
+    color: #090909;
+    padding: 0.6em 1.6em;
+    font-size: 10px;
+    border-radius: 0.5em;
+    background: #c7c7c7ea;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.backLink {
+    color: #090909;
+    padding: 0.6em 1.6em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #c7c7c7ea;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.backLink:hover {
+    background: #dcdcdc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(199, 200, 199, 0.751);
+    /* Greenish to match brand? or keep neutral/orange? using green from index icons */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
