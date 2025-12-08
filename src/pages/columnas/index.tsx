@@ -64,10 +64,10 @@ export default function Columnas() {
         <p className={styles.desc}>Nuestra red de columnistas y sus espacios personales.</p>
 
         <div className={styles.text}>
-          <h5>
+          <p>
             Explora las distintas categorías y descubre a nuestros colaboradores.
             Accede directamente a sus blogs para leer sus artículos completos.
-          </h5>
+          </p>
         </div>
       </div>
 

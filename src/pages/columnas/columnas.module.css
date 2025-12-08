@@ -1,4 +1,4 @@
-/* Hero */
+/* Hero - Podcast Style */
 .hero {
   margin-top: 120px;
   text-align: center;
@@ -6,114 +6,165 @@
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 5rem;
   font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
   color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(66, 193, 110, 0.925);
+  /* Green for Columnas */
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  min-height: 205px;
+  box-shadow: #505050ea 3px 4px 4px;
+  margin: 0 auto;
+  margin-top: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .desc {
-  font-size: 1.05rem;
-  color: #eee;
-  margin-top: 0.5rem;
-}
-
-/* Texto introductorio */
-.text {
-  margin: 20px auto 0;
-  max-width: 900px;
-  font-size: 1.05rem;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #afafafc5;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px #00000020;
   line-height: 1.6;
-  color: #eee;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 12px;
-  border-radius: 8px;
+  color: #222222;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Main content */
+.text {
+  margin-bottom: 50px;
+  background-color: #afafafc5;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px #00000020;
+  line-height: 1.6;
+  color: #222222;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+/* Content */
 .content {
-  max-width: 980px;
-  margin: 30px auto;
+  max-width: 1200px;
+  margin: 32px auto;
   padding: 1rem;
 }
 
-/* Section for each category */
 .categorySection {
   margin-bottom: 4rem;
 }
 
 .categoryTitle {
   font-size: 2rem;
-  color: #fff;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: #cdcdcd;
+  text-shadow: #222 2px 0px 1px;
+  /* Dark text on main bg */
+  border-bottom: 2px solid #ccc;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Container for posts in a category */
+/* List container using Flexbox to avoid grid overlap/constaints */
 .list {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 
-/* Cada post (Columnista) */
+/* Individual Post Card */
 .post {
   background: rgba(255, 255, 255, 0.95);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Flex item behavior */
+  flex: 1 1 300px;
+  /* Grow, shrink, basis */
+  max-width: 450px;
+  /* Don't get too wide */
+  min-width: 280px;
+  /* Don't get too small */
+
+  display: flex;
+  flex-direction: column;
 }
 
 .post:hover {
-  transform: translateY(-2px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .columnistName {
   font-size: 1.4rem;
   font-weight: 700;
   color: #222;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .columnTitle {
   font-size: 1.1rem;
   color: #555;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-style: italic;
+  margin-bottom: 0.8rem;
 }
 
 .description {
   color: #444;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
 .link {
   display: inline-block;
-  background-color: #f36d4c;
-  /* Brand orange? */
+  background-color: #42c16e;
+  /* Columnas Green */
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
+  text-align: center;
   transition: background 0.3s;
+  align-self: flex-start;
 }
 
 .link:hover {
-  background-color: #d65a3b;
+  background-color: #36a35b;
 }
 
-/* Volver */
 .backLink {
+  color: #090909;
+  padding: 0.6em 1.6em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #c7c7c7ea;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
   display: inline-block;
-  color: #eee;
-  /* Light color for dark background? or dark if outside layout? */
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
+}
+
+.backLink:hover {
+  background: #dcdcdc;
 }

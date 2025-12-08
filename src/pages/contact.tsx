@@ -52,7 +52,7 @@ export default function Contact() {
             <div className="bg-white rounded p-4 p-md-5 shadow-sm">
               <form onSubmit={handleSubmit}>
                 <div className="mb-4">
-                  <label className="form-label">Nombre</label>
+                  <label className={`form-label ${styles.label}`}>Nombre</label>
                   <input
                     type="text"
                     name="name"
@@ -63,7 +63,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="form-label">Email</label>
+                  <label className={`form-label ${styles.label}`}>Email</label>
                   <input
                     type="email"
                     name="email"
@@ -74,7 +74,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="form-label">Mensaje</label>
+                  <label className={`form-label ${styles.label}`}>Mensaje</label>
                   <textarea
                     name="message"
                     className={`form-control ${styles.input}`}
