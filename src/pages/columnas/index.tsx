@@ -5,38 +5,10 @@ import styles from "./columnas.module.css";
 // Sample Data Structure
 const categories = [
   {
-    name: "Arte",
-    items: [
-      {
-        columnist: "Ana Gomez",
-        title: "Miradas Contemporáneas",
-        description: "Análisis de las tendencias artísticas actuales y su impacto en la sociedad.",
-        link: "https://anagomez-arte.blogspot.com"
-      },
-      {
-        columnist: "Carlos Ruiz",
-        title: "Historia del Color",
-        description: "Un recorrido por el uso del color a través de los siglos.",
-        link: "https://carlosruiz-color.blogspot.com"
-      }
-    ]
-  },
-  {
-    name: "Cultura",
-    items: [
-      {
-        columnist: "Lucía Fernández",
-        title: "Voces Urbanas",
-        description: "Crónicas de la vida en la ciudad y sus expresiones culturales.",
-        link: "https://lucia-cultura.blogspot.com"
-      }
-    ]
-  },
-  {
     name: "Sociedades",
     items: [
       {
-        columnist: "Roberto Diaz",
+        columnist: "Columnas & Redacción",
         title: "Dinámicas Sociales",
         description: "Reflexiones sobre cómo interactuamos y construimos comunidad.",
         link: "https://robertodiaz-soc.blogspot.com"
@@ -44,13 +16,35 @@ const categories = [
     ]
   },
   {
-    name: "Ciencia",
+    name: "Salud y bienestar",
     items: [
       {
-        columnist: "Elena Martinez",
-        title: "Ciencia para Todos",
-        description: "Divulgación científica accesible y relevante.",
-        link: "https://elena-ciencia.blogspot.com"
+        columnist: "Columnas & Redacción",
+        title: "Espacio de Salud",
+        description: "Próximamente: Contenido sobre salud y bienestar.",
+        link: "#"
+      }
+    ]
+  },
+  {
+    name: "Educación",
+    items: [
+      {
+        columnist: "Columnas & Redacción",
+        title: "Horizontes Educativos",
+        description: "Próximamente: Reflexiones sobre el futuro de la educación.",
+        link: "#"
+      }
+    ]
+  },
+  {
+    name: "Literatura y Arte",
+    items: [
+      {
+        columnist: "Columnas & Redacción",
+        title: "Miradas Contemporáneas",
+        description: "Análisis de las tendencias artísticas actuales y su impacto en la sociedad.",
+        link: "https://anagomez-arte.blogspot.com"
       }
     ]
   }
