@@ -1,0 +1,45 @@
+import Layout from '../../components/Layout';
+import styles from '../../styles/Blog.module.css';
+import Head from 'next/head';
+
+export default function BlogLanding() {
+    return (
+        <Layout>
+            <Head>
+                <title>Blog | Aldeano Global</title>
+                <meta name="description" content="Descubre el Blog de Aldeano Global, un espacio dedicado a la reflexión, el conocimiento y la cultura." />
+            </Head>
+
+            <div className={styles.blogContainer}>
+                <div className={styles.glassCard}>
+                    <h1 className={styles.title}>Blog de Aldeano Global</h1>
+
+                    <div className={styles.description}>
+                        <p>
+                            Bienvenido a nuestro rincón de pensamiento. El Blog de <strong>Aldeano Global</strong> es una extensión de nuestra misión:
+                            un espacio vibrante donde la cultura, la ciencia y la consciencia se encuentran para generar diálogos transformadores.
+                        </p>
+                        <p>
+                            Aquí compartimos perspectivas profundas sobre el vecinalismo, el arte y los desafíos de nuestra sociedad contemporánea,
+                            buscando siempre inspirar y conectar a nuestra comunidad global.
+                        </p>
+                    </div>
+
+                    <a
+                        href="#"
+                        className={styles.ctaButton}
+                        onClick={(e) => {
+                            // Prevenimos el salto si no hay link aún
+                            if (e.currentTarget.getAttribute('href') === '#') {
+                                e.preventDefault();
+                                alert('Próximamente estaremos vinculando nuestro blog oficial. ¡Mantente atento!');
+                            }
+                        }}
+                    >
+                        Ir al Blog
+                    </a>
+                </div>
+            </div>
+        </Layout>
+    );
+}

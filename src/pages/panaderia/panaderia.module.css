@@ -1,76 +1,187 @@
-/* Hero - Panadería Style */
-.hero {
-    margin-top: 120px;
-    text-align: center;
-    padding: 1rem;
-}
+/* Panadería Style - Brown & Beige Palette */
 
-.title {
-    font-size: 5rem;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(193, 110, 66, 0.925);
-    /* Warm brownish color for Panadería */
-    border-radius: 10px;
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    min-height: 130px;
-    box-shadow: #505050ea 3px 4px 4px;
-    margin: 0 auto;
-    margin-top: -90px;
+.hero {
+    margin-top: 80px;
+    padding: 6rem 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/bakery-bg.jpg') center/cover no-repeat;
+    min-height: 60vh;
     justify-content: center;
 }
 
-.desc {
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background-color: #afafafc5;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 4px #00000020;
-    line-height: 1.6;
-    color: #222222;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: #f5f5dc;
+    /* Beige */
+    text-shadow: 3px 3px 12px rgba(46, 34, 27, 0.825);
+    font-family: Impact, Charcoal, sans-serif;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-.text {
-    margin-bottom: 50px;
-    background-color: #afafafc5;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.1rem;
+.desc {
+    color: #f5f5dc;
+    font-size: 1.8rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 4px #00000020;
-    line-height: 1.6;
-    color: #222222;
-    border-radius: 8px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     max-width: 800px;
-    margin: 0 auto 50px auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Process Section */
+.processSection {
+    background-color: #fdfaf584;
+    /* Very light beige */
+    padding: 5rem 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    color: #4e342e;
+    /* Deep Brown */
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #8d6e63;
+}
+
+.contentRow {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.textContent {
+    flex: 1;
+    min-width: 300px;
+}
+
+.textContent p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #5d4037;
+    margin-bottom: 1.5rem;
+}
+
+.imageGrid {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.imagePlaceholder {
+    background-color: #d7ccc8;
+    aspect-ratio: 4/5;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6d4c41;
+    font-weight: 600;
+    font-style: italic;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #fff;
+}
+
+.imagePlaceholder:hover {
+    transform: scale(1.03) rotate(2deg);
+}
+
+.widePlaceholder {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+}
+
+/* CTA Button */
+.ctaContainer {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: #4e342e;
+    /* Dark Brown */
+    color: #f5f5dc;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4e342e;
+    background: #f5f5dc;
+    border: none;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
+}
+
+.ctaButton:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #2e120d;
+}
+
+.backLinkContainer {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #fdfaf5;
 }
 
 .backLink {
-    color: #090909;
-    padding: 0.6em 1.6em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: #c7c7c7ea;
-    cursor: pointer;
-    border: 1px solid #e8e8e8;
-    transition: all 0.3s;
-    display: inline-block;
+    color: #8d6e63;
+    font-weight: 600;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .backLink:hover {
-    background: #dcdcdc;
+    color: #4e342e;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .contentRow {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
 }

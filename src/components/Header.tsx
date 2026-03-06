@@ -39,17 +39,12 @@ export default function Header() {
               </li>
               <li className="nav-item">
                 <Link href="/personas" className="nav-link">
-                  Personas
+                  Vecinalismo
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/salud-ciencia-conciencia" className="nav-link">
-                  Salud, Ciencia & Conciencia
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/cultura" className="nav-link">
-                  Cultura
+                <Link href="/blog" className="nav-link">
+                  Blog
                 </Link>
               </li>
               <li className="nav-item">
