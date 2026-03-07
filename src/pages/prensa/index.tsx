@@ -5,22 +5,46 @@ import Image from "next/image";
 
 const prensaEntries = [
     {
-        title: "Evento Cultural 2024",
-        description: "Cobertura completa sobre la participación en el simposio de arte y tecnología.",
-        image: "/img/gallery/prensa1.jpg", // Placeholder until user provides real images
-        alt: "Participación en evento"
+        title: "BioElectronic",
+        description: "Equipos bioelectrónicos y terapias con frecuencias para la salud integral.",
+        image: "/img/auspiciantes/1.jpg",
+        alt: "BioElectronic"
     },
     {
-        title: "Mención en el Diario Local",
-        description: "Reconocimiento a la labor de difusión cultural y científica en la región.",
-        image: "/img/gallery/prensa2.jpg",
-        alt: "Recorte de periódico"
+        title: "Arreglarte",
+        description: "Reparación de calzado con calidad y dedicación.",
+        image: "/img/auspiciantes/arreglarte.png",
+        alt: "Arreglarte"
     },
     {
-        title: "Entrevista Audiovisual",
-        description: "Diálogo sobre el impacto de Aldeano Global en la comunidad digital.",
-        image: "/img/gallery/prensa3.jpg",
-        alt: "Entrevista en video"
+        title: "BioVerde",
+        description: "Suplementos homeopáticos para tu salud y bienestar natural.",
+        image: "/img/auspiciantes/BioVerde.jpg",
+        alt: "BioVerde"
+    },
+    {
+        title: "La Jabonería Natural",
+        description: "Jabones, cremas y cosmética natural artesanal.",
+        image: "/img/auspiciantes/La Jaboneria.jpeg",
+        alt: "La Jabonería Natural"
+    },
+    {
+        title: "Ser Integral",
+        description: "Dietética a domicilio: salud y comodidad en tu puerta.",
+        image: "/img/auspiciantes/Ser Integral.jpeg",
+        alt: "Ser Integral"
+    },
+    {
+        title: "Señorita Bambú",
+        description: "Encuadernaciones artísticas y reparación de libros.",
+        image: "/img/auspiciantes/srta bambu.png",
+        alt: "Señorita Bambú"
+    },
+    {
+        title: "Clases de Yoga",
+        description: "Instructor Cecilia: clases para armonizar cuerpo y mente.",
+        image: "/img/auspiciantes/yogafixed.png",
+        alt: "Clases de Yoga"
     }
 ];
 
@@ -44,14 +68,20 @@ export default function Prensa() {
                 {prensaEntries.map((entry, index) => (
                     <article key={index} className={styles.prensaItem}>
                         <div className={styles.imageContainer}>
-                            {/* Usamos un div como placeholder si la imagen no existe aún */}
-                            <div className={styles.imagePlaceholder}>
-                                <span>Espacio para Imagen</span>
-                            </div>
+                            <Image
+                                src={entry.image}
+                                alt={entry.alt}
+                                layout="fill"
+                                objectFit="contain"
+                                className={styles.sponsorImage}
+                            />
                         </div>
                         <div className={styles.caption}>
                             <h3>{entry.title}</h3>
                             <p>{entry.description}</p>
+                            <a href="#" className={styles.sponsorButton} target="_blank" rel="noopener noreferrer">
+                                Visitar
+                            </a>
                         </div>
                     </article>
                 ))}

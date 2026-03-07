@@ -1,6 +1,7 @@
 import Layout from "../../components/Layout";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./panaderia.module.css";
 
 export default function Panaderia() {
@@ -42,13 +43,28 @@ export default function Panaderia() {
 
                         <div className={styles.imageGrid}>
                             <div className={styles.imagePlaceholder}>
-                                <span>Tradición</span>
+                                <Image
+                                    src="/img/panaderia/pexels-skyler-ewing-266953-10011797.jpg"
+                                    alt="Tradición Panadera"
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
                             </div>
                             <div className={styles.imagePlaceholder}>
-                                <span>Materia Prima</span>
+                                <Image
+                                    src="/img/panaderia/pexels-skyler-ewing-266953-9513725.jpg"
+                                    alt="Materia Prima Calidad"
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
                             </div>
                             <div className={`${styles.imagePlaceholder} ${styles.widePlaceholder}`}>
-                                <span>Amasa Madre</span>
+                                <Image
+                                    src="/img/panaderia/pexels-veraphoto-14193051.jpg"
+                                    alt="Masa Madre Natural"
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
                             </div>
                         </div>
                     </div>
@@ -72,6 +88,8 @@ export default function Panaderia() {
                     >
                         Visitar la Panadería
                     </a>
+                    <p></p>
+                    <p>O puedes contactarnos al whatsapp +54 9 3541 33-5419</p>
                 </div>
             </section>
 
