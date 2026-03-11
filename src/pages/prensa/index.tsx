@@ -16,14 +16,15 @@ const prensaEntries = [
         description: "Reparación de calzado con calidad y dedicación.",
         image: "/img/auspiciantes/arreglarte.png",
         alt: "Arreglarte",
-        link: "#"
+        link: "",
+        phone: "+54 9 11 4036-2627"
     },
     {
         title: "BioVerde",
         description: "Suplementos homeopáticos para tu salud y bienestar natural.",
         image: "/img/auspiciantes/BioVerde.jpg",
         alt: "BioVerde",
-        link: "#"
+        link: "https://www.instagram.com/bioverde_suplementos?igsh=MWV4c3poY2hiZ25jNQ=="
     },
     {
         title: "La Jabonería Natural",
@@ -49,16 +50,17 @@ const prensaEntries = [
     {
         title: "Clases de Yoga",
         description: "Instructor Cecilia: clases para armonizar cuerpo y mente.",
-        image: "/img/auspiciantes/yogafixed.png",
+        image: "/img/auspiciantes/yogafixed.jpg",
         alt: "Clases de Yoga",
-        link: "#"
+        link: "",
+        phone: "+54 9 XXXX-XXXX"
     },
     {
         title: "Showroom Aura",
         description: "Indumentaria femenina en Capilla del Monte.",
         image: "/img/auspiciantes/IMG-20260309-WA0027.jpg",
         alt: "Showroom Aura",
-        link: "#"
+        link: "https://www.instagram.com/auraindu_capilla?utm_source=qr&igsh=eGp3N2cyd2xvZ2Rt"
     }
 ];
 
@@ -93,9 +95,18 @@ export default function Prensa() {
                         <div className={styles.caption}>
                             <h3>{entry.title}</h3>
                             <p>{entry.description}</p>
-                            <a href={entry.link} className={styles.sponsorButton} target="_blank" rel="noopener noreferrer">
-                                Visitar
-                            </a>
+
+                            {entry.phone && (
+                                <p className={styles.phone}>
+                                    <strong>Contacto:</strong> {entry.phone}
+                                </p>
+                            )}
+
+                            {entry.link && entry.link !== "#" && (
+                                <a href={entry.link} className={styles.sponsorButton} target="_blank" rel="noopener noreferrer">
+                                    Visitar
+                                </a>
+                            )}
                         </div>
                     </article>
                 ))}

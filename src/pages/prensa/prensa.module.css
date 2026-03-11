@@ -121,6 +121,16 @@
     /* Pushes button to bottom if titles vary in length */
 }
 
+.phone {
+    font-size: 0.9rem;
+    color: #444;
+    background-color: #f0fdf4;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border-left: 3px solid #42c16e;
+    margin: 0.5rem 0;
+}
+
 .sponsorButton {
     display: inline-block;
     padding: 0.8rem 1.5rem;

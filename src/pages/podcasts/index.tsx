@@ -22,17 +22,17 @@ export default function Podcasts() {
       <main className={styles.content}>
         <section className={styles.grid}>
           <div className={styles.episode}>
-            <h3>Lista de Podcasts en YouTube</h3>
+            <h3>Aldeano Global en YouTube</h3>
             <p>Contenido audiovisual.</p>
             <p>_________________________________________________________</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
-            <p>Link: Nombre y descripción de la sección/podcast/programa</p>
+            <div className={styles.buttonContainer}>
+              <a href="https://www.youtube.com/@aldeano_global" target="_blank" rel="noopener noreferrer" className={styles.youtubeButton}>
+                Visitar Canal de YouTube
+              </a>
+              <a href="https://www.youtube.com/@aldeano_global/podcasts" target="_blank" rel="noopener noreferrer" className={styles.youtubeButton}>
+                Ver Podcast en YouTube
+              </a>
+            </div>
           </div>
         </section>
 
