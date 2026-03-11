@@ -38,7 +38,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/personas" className="nav-link">
+                <Link href="/vecinalismo" className="nav-link">
                   Vecinalismo
                 </Link>
               </li>

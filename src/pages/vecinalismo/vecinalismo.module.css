@@ -1,0 +1,152 @@
+/* Vecinalismo Style - Community & Social Palette */
+
+.hero {
+    margin-top: 80px;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f8e94b;
+    /* Light Green background instead of image */
+    justify-content: center;
+}
+
+.title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    /* Darker Green for visibility */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    font-family: Impact, Charcoal, sans-serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.desc {
+    color: #000000;
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Content Section */
+.contentSection {
+    background-color: #f9fbf99a;
+    padding: 5rem 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    color: #1b5e20;
+    /* Deep Green */
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #4caf50;
+}
+
+.contentRow {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.textContent {
+    flex: 1;
+    min-width: 300px;
+}
+
+.textContent p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #000000;
+    margin-bottom: 1.5rem;
+}
+
+.imageGrid {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.imagePlaceholder {
+    aspect-ratio: 4/5;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    border: 4px solid #fff;
+    background-color: #e8f5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.imagePlaceholder:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.widePlaceholder {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+}
+
+.backLinkContainer {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #f1f8e9;
+}
+
+.backLink {
+    color: #1b5e20;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.backLink:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .contentRow {
+        flex-direction: column;
+    }
+
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
+}

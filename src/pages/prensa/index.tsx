@@ -8,43 +8,57 @@ const prensaEntries = [
         title: "BioElectronic",
         description: "Equipos bioelectrónicos y terapias con frecuencias para la salud integral.",
         image: "/img/auspiciantes/1.jpg",
-        alt: "BioElectronic"
+        alt: "BioElectronic",
+        link: "https://bioelectronic.net/index.php"
     },
     {
         title: "Arreglarte",
         description: "Reparación de calzado con calidad y dedicación.",
         image: "/img/auspiciantes/arreglarte.png",
-        alt: "Arreglarte"
+        alt: "Arreglarte",
+        link: "#"
     },
     {
         title: "BioVerde",
         description: "Suplementos homeopáticos para tu salud y bienestar natural.",
         image: "/img/auspiciantes/BioVerde.jpg",
-        alt: "BioVerde"
+        alt: "BioVerde",
+        link: "#"
     },
     {
         title: "La Jabonería Natural",
         description: "Jabones, cremas y cosmética natural artesanal.",
         image: "/img/auspiciantes/La Jaboneria.jpeg",
-        alt: "La Jabonería Natural"
+        alt: "La Jabonería Natural",
+        link: "ttps://www.instagram.com/lajaboneria_natural?igsh=MThpeW1sdGF6enByeA=="
     },
     {
         title: "Ser Integral",
         description: "Dietética a domicilio: salud y comodidad en tu puerta.",
         image: "/img/auspiciantes/Ser Integral.jpeg",
-        alt: "Ser Integral"
+        alt: "Ser Integral",
+        link: "https://pedix.app/serintegral"
     },
     {
         title: "Señorita Bambú",
         description: "Encuadernaciones artísticas y reparación de libros.",
         image: "/img/auspiciantes/srta bambu.png",
-        alt: "Señorita Bambú"
+        alt: "Señorita Bambú",
+        link: "http://sritabambu.com.ar/"
     },
     {
         title: "Clases de Yoga",
         description: "Instructor Cecilia: clases para armonizar cuerpo y mente.",
         image: "/img/auspiciantes/yogafixed.png",
-        alt: "Clases de Yoga"
+        alt: "Clases de Yoga",
+        link: "#"
+    },
+    {
+        title: "Showroom Aura",
+        description: "Indumentaria femenina en Capilla del Monte.",
+        image: "/img/auspiciantes/IMG-20260309-WA0027.jpg",
+        alt: "Showroom Aura",
+        link: "#"
     }
 ];
 
@@ -79,7 +93,7 @@ export default function Prensa() {
                         <div className={styles.caption}>
                             <h3>{entry.title}</h3>
                             <p>{entry.description}</p>
-                            <a href="#" className={styles.sponsorButton} target="_blank" rel="noopener noreferrer">
+                            <a href={entry.link} className={styles.sponsorButton} target="_blank" rel="noopener noreferrer">
                                 Visitar
                             </a>
                         </div>
