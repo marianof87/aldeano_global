@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <nav className="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div className="container">
           <Link href="/" className="navbar-brand d-flex align-items-center">
             <Image
