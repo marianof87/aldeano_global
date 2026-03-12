@@ -53,7 +53,7 @@ const prensaEntries = [
         image: "/img/auspiciantes/yogafixed.jpg",
         alt: "Clases de Yoga",
         link: "",
-        phone: "+54 9 22 4036-2627"
+        phone: "+54 9 11 4036-2627"
     },
     {
         title: "Showroom Aura",
