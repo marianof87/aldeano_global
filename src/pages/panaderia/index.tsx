@@ -79,6 +79,8 @@ export default function Panaderia() {
                     <a
                         href="https://comunicacionagloba.wixsite.com/aldeano-global/panaderia"
                         className={styles.ctaButton}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Visitar la Panadería
                     </a>
