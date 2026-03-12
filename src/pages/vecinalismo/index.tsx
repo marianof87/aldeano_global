@@ -71,9 +71,9 @@ export default function Vecinalismo() {
                 </div>
             </section>
 
-            <div className={styles.backLinkContainer}>
+            <div className="text-center my-5">
                 <Link href="/" className="btn-back-home">
-                    ← Volver al inicio
+                    Volver al inicio
                 </Link>
             </div>
         </Layout>

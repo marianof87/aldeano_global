@@ -35,12 +35,12 @@ export default function BlogLanding() {
                         Ir al Blog
                     </a>
                 </div>
+            </div>
 
-                <div className="text-center mt-5 mb-5">
-                    <Link href="/" className="btn-back-home">
-                        ← Volver al inicio
-                    </Link>
-                </div>
+            <div className="text-center my-5">
+                <Link href="/" className="btn-back-home">
+                    Volver al inicio
+                </Link>
             </div>
         </Layout>
     );

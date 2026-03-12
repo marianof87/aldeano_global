@@ -94,9 +94,9 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Back button aligned left */}
-        <div className="mt-5">
-          <Link href="/" className={styles.backLink}>
+        {/* Back button centered */}
+        <div className="text-center mt-5">
+          <Link href="/" className="btn-back-home">
             Volver al inicio
           </Link>
         </div>
