@@ -26,15 +26,10 @@ export default function BlogLanding() {
                     </div>
 
                     <a
-                        href="#"
+                        href="https://comunicacionagloba.wixsite.com/aldeano-global"
                         className={styles.ctaButton}
-                        onClick={(e) => {
-                            // Prevenimos el salto si no hay link aún
-                            if (e.currentTarget.getAttribute('href') === '#') {
-                                e.preventDefault();
-                                alert('Próximamente estaremos vinculando nuestro blog oficial. ¡Mantente atento!');
-                            }
-                        }}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         Ir al Blog
                     </a>

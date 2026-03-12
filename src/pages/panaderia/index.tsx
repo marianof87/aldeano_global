@@ -77,14 +77,8 @@ export default function Panaderia() {
                     <h3>¿Deseas probar nuestras especialidades?</h3>
                     <p>Visita nuestro sitio dedicado para pedidos y catálogo completo.</p>
                     <a
-                        href="#"
+                        href="https://comunicacionagloba.wixsite.com/aldeano-global/panaderia"
                         className={styles.ctaButton}
-                        onClick={(e) => {
-                            if (e.currentTarget.getAttribute('href') === '#') {
-                                e.preventDefault();
-                                alert('Próximamente estaremos vinculando nuestra tienda online. ¡Gracias por tu interés!');
-                            }
-                        }}
                     >
                         Visitar la Panadería
                     </a>

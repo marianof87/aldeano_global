@@ -9,9 +9,9 @@ const categories = [
     items: [
       {
         columnist: "Columnas & Redacción",
-        title: "Dinámicas Sociales",
+        title: "Sociedades",
         description: "Reflexiones sobre cómo interactuamos y construimos comunidad.",
-        link: "https://robertodiaz-soc.blogspot.com"
+        link: "https://comunicacionagloba.wixsite.com/aldeano-global/sociedades"
       }
     ]
   },
@@ -21,8 +21,8 @@ const categories = [
       {
         columnist: "Columnas & Redacción",
         title: "Espacio de Salud",
-        description: "Próximamente: Contenido sobre salud y bienestar.",
-        link: "#"
+        description: "Contenido sobre salud y bienestar.",
+        link: "https://comunicacionagloba.wixsite.com/aldeano-global/bienestar"
       }
     ]
   },
@@ -32,19 +32,19 @@ const categories = [
       {
         columnist: "Columnas & Redacción",
         title: "Horizontes Educativos",
-        description: "Próximamente: Reflexiones sobre el futuro de la educación.",
-        link: "#"
+        description: "Reflexiones sobre el futuro de la educación.",
+        link: "https://comunicacionagloba.wixsite.com/aldeano-global/educacion"
       }
     ]
   },
   {
-    name: "Literatura y Arte",
+    name: "Arte y Cultura",
     items: [
       {
         columnist: "Columnas & Redacción",
         title: "Miradas Contemporáneas",
         description: "Análisis de las tendencias artísticas actuales y su impacto en la sociedad.",
-        link: "https://anagomez-arte.blogspot.com"
+        link: "https://comunicacionagloba.wixsite.com/aldeano-global/arte-y-cultura"
       }
     ]
   }
