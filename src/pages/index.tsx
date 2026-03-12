@@ -7,13 +7,15 @@ export default function Home() {
 
       {/* --- SECCIÓN PRINCIPAL --- */}
       <div className='part1'>
-        <h1 className="mb-4">Plataforma Cultural</h1>
-        <p className="lead">-ALDEANO GLOBAL ES UN MEDIO DIGITAL-</p>
-        <p>·</p>
-        <h5 className='txt'>
-          Un espacio de comunicación cultural que aborda múltiples expresiones artísticas, sociales y científicas.
-          Nos dedicamos a la difusión de contenidos que promueven el conocimiento, la reflexión y el diálogo.
-        </h5>
+        <div className="container">
+          <h1 className="mb-4">Plataforma Cultural</h1>
+          <p className="lead">-ALDEANO GLOBAL ES UN MEDIO DIGITAL-</p>
+          <p>·</p>
+          <h5 className='txt'>
+            Un espacio de comunicación cultural que aborda múltiples expresiones artísticas, sociales y científicas.
+            Nos dedicamos a la difusión de contenidos que promueven el conocimiento, la reflexión y el diálogo.
+          </h5>
+        </div>
       </div>
 
       {/* --- CARDS (nuevo estilo) --- */}
@@ -96,12 +98,14 @@ export default function Home() {
 
       {/* --- TEXTO FINAL --- */}
       <div>
-        <h5 className='card4'>
-          La promoción de la diversidad cultural y el respeto intercultural es uno de sus objetivos principales.
-          A través de la interacción en redes sociales y la difusión de contenido de calidad, Aldeano Global no solo informa,
-          sino que también inspira a sus seguidores a valorar la riqueza de las culturas del mundo, destacando la importancia
-          del entendimiento mutuo y el intercambio de ideas.
-        </h5>
+        <div className="container">
+          <h5 className='card4'>
+            La promoción de la diversidad cultural y el respeto intercultural es uno de sus objetivos principales.
+            A través de la interacción en redes sociales y la difusión de contenido de calidad, Aldeano Global no solo informa,
+            sino que también inspira a sus seguidores a valorar la riqueza de las culturas del mundo, destacando la importancia
+            del entendimiento mutuo y el intercambio de ideas.
+          </h5>
+        </div>
       </div>
 
       {/* --- REDES SOCIALES --- */}

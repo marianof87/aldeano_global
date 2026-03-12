@@ -169,7 +169,8 @@ footer {
 main {
   padding-top: 7rem;
   padding-bottom: 2rem;
-  max-width: 1483px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Dark mode */
