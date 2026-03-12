@@ -309,3 +309,22 @@ main {
   color: #2c2c2c;
   letter-spacing: 0.05em;
 }
+
+/* === BACK TO HOME BUTTON === */
+.btn-back-home {
+  color: #090909;
+  padding: 0.6em 1.6em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #c7c7c7ea;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.btn-back-home:hover {
+  background: #dcdcdc;
+  color: #000;
+}

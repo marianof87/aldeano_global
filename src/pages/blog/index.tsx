@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 import styles from '../../styles/Blog.module.css';
 import Head from 'next/head';
 
@@ -33,6 +34,12 @@ export default function BlogLanding() {
                     >
                         Ir al Blog
                     </a>
+                </div>
+
+                <div className="text-center mt-5 mb-5">
+                    <Link href="/" className="btn-back-home">
+                        ← Volver al inicio
+                    </Link>
                 </div>
             </div>
         </Layout>

@@ -119,23 +119,6 @@
     aspect-ratio: 16/9;
 }
 
-.backLinkContainer {
-    padding: 3rem 1rem;
-    text-align: center;
-    background: #f1f8e9;
-}
-
-.backLink {
-    color: #1b5e20;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.backLink:hover {
-    color: #388e3c;
-    text-decoration: underline;
-}
 
 @media (max-width: 768px) {
     .title {

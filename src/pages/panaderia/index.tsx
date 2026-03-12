@@ -90,7 +90,7 @@ export default function Panaderia() {
             </section>
 
             <div className={styles.backLinkContainer}>
-                <Link href="/" className={styles.backLink}>
+                <Link href="/" className="btn-back-home">
                     ← Volver al inicio
                 </Link>
             </div>
