@@ -74,7 +74,7 @@ export default function Prensa() {
                 <div className={styles.text}>
                     <p>
                         Aldeano Global es un proyecto en constante expansión. Nuestra visión también es la de
-                        apoyar a los emprendedores y a;adir valor a su trabajo. Por eso, hemos creado esta sección
+                        apoyar a los emprendedores y añadir valor a su trabajo. Por eso, hemos creado esta sección
                         para dar a conocer sus proyectos y colaboraciones.
                     </p>
                 </div>
